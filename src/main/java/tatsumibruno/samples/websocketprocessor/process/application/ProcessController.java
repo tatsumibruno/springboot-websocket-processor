@@ -14,12 +14,12 @@ import java.time.LocalDateTime;
 @CrossOrigin
 @RestController
 @RequestMapping(path = "/api")
-public class ProcessorController {
+public class ProcessController {
 
     private ProcessorService service;
 
     @Autowired
-    public ProcessorController(ProcessorService service) {
+    public ProcessController(ProcessorService service) {
         this.service = service;
     }
 

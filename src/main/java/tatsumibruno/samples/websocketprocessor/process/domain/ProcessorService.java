@@ -35,6 +35,7 @@ public class ProcessorService {
     }
 
     private String gerarMensagem(int etapa) {
-        return String.format("Executada a etapa %s às %s", etapa, LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
+        return String.format("Executada a etapa %s às %s", etapa,
+                LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
     }
 }
